@@ -1,6 +1,6 @@
 <?php
 
-namespace tools\linetype;
+namespace lists\linetype;
 
 class lisst extends \jars\Linetype
 {

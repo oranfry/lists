@@ -1,6 +1,6 @@
 <?php
 
-namespace tools\linetype;
+namespace lists\linetype;
 
 class listitem extends \jars\Linetype
 {
