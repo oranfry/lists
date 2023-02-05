@@ -7,7 +7,7 @@ class listitem extends \jars\Linetype
     public function __construct()
     {
         $this->table = 'listitem';
-        $this->label = 'List Item';
+
         $this->fields = [
             'item' => function($records) {
                 return $records['/']->item;
@@ -16,6 +16,7 @@ class listitem extends \jars\Linetype
                 return @$records['/']->comment;
             },
         ];
+
         $this->unfuse_fields = [
             'item' => function($line, $oldline) {
                 return $line->item;

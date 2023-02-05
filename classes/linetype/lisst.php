@@ -23,6 +23,7 @@ class lisst extends \jars\Linetype
                 'linetype' => 'listitem',
                 'property' => 'listitems',
                 'tablelink' => 'list_listitem',
+                'only_parent' => 'listlistitem_list',
             ],
         ];
     }
