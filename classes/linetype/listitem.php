@@ -2,32 +2,21 @@
 
 namespace lists\linetype;
 
+use simplefields\traits\SimpleFields;
+
 class listitem extends \jars\Linetype
 {
+    use SimpleFields;
+
     public function __construct()
     {
         $this->table = 'listitem';
 
-        $this->fields = [
-            'item' => function($records) {
-                return $records['/']->item;
-            },
-            'comment' => function($records) {
-                return @$records['/']->comment;
-            },
-        ];
-
-        $this->unfuse_fields = [
-            'item' => function($line, $oldline) {
-                return $line->item;
-            },
-            'comment' => function($line, $oldline) {
-                return @$line->comment;
-            },
-        ];
+        $this->simple_string('item');
+        $this->simple_string('comment');
     }
 
-    public function validate($line)
+    public function validate($line): array
     {
         $errors = [];
 

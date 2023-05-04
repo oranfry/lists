@@ -2,21 +2,18 @@
 
 namespace lists\linetype;
 
+use simplefields\traits\SimpleFields;
+
 class lisst extends \jars\Linetype
 {
+    use SimpleFields;
+
     public function __construct()
     {
         $this->table = 'list';
 
-        $this->fields = [
-            'name' => fn ($records) => $records['/']->name,
-            'comment' => fn ($records) => $records['/']->comment,
-        ];
-
-        $this->unfuse_fields = [
-            'name'=> fn ($line, $oldline) => $line->name,
-            'comment'=> fn ($line, $oldline) => $line->comment,
-        ];
+        $this->simple_string('name');
+        $this->simple_string('comment');
 
         $this->children = [
             (object) [
