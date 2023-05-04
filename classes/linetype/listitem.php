@@ -18,7 +18,7 @@ class listitem extends \jars\Linetype
 
     public function validate($line): array
     {
-        $errors = [];
+        $errors = parent::validate($line);
 
         if (!$line->item) {
             $errors[] = 'Empty list item not allowed';
