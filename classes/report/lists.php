@@ -15,6 +15,5 @@ class lists extends \jars\Report
         ];
 
         $this->sorter = Obex::createStringCmp('name');
-        $this->classify = 'all';
     }
 }
