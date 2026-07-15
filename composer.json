@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "lists\\": "classes"
+            "OranFry\\Lists\\": ""
         }
     },
     "name": "oranfry/lists",

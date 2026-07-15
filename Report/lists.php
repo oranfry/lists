@@ -1,10 +1,10 @@
 <?php
 
-namespace lists\report;
+namespace OranFry\Lists\Report;
 
-use obex\Obex;
+use OranFry\Obex\Obex;
 
-class lists extends \jars\Report
+class lists extends OranFry\Jars\Core\Report
 {
     public function __construct()
     {

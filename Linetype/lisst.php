@@ -1,10 +1,10 @@
 <?php
 
-namespace lists\linetype;
+namespace OranFry\Lists\Linetype;
 
-use simplefields\traits\SimpleFields;
+use OranFry\SimpleFields\Traits\SimpleFields;
 
-class lisst extends \jars\Linetype
+class lisst extends \OranFry\Jars\Core\Linetype
 {
     use SimpleFields;
 
