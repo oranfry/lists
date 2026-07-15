@@ -4,7 +4,7 @@ namespace OranFry\Lists\Linetype;
 
 use OranFry\SimpleFields\Traits\SimpleFields;
 
-class lisst extends \OranFry\Jars\Core\Linetype
+class Lisst extends \OranFry\Jars\Core\Linetype
 {
     use SimpleFields;
 

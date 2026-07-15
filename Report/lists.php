@@ -4,7 +4,7 @@ namespace OranFry\Lists\Report;
 
 use OranFry\Obex\Obex;
 
-class lists extends OranFry\Jars\Core\Report
+class Lists extends OranFry\Jars\Core\Report
 {
     public function __construct()
     {
