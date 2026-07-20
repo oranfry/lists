@@ -1,6 +1,6 @@
 <?php
 
-namespace OranFry\Lists\Report;
+namespace OranFry\Lists\Reports;
 
 use OranFry\Obex\Obex;
 

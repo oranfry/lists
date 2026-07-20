@@ -1,6 +1,6 @@
 <?php
 
-namespace OranFry\Lists\Linetype;
+namespace OranFry\Lists\Linetypes;
 
 use OranFry\SimpleFields\Traits\SimpleFields;
 
